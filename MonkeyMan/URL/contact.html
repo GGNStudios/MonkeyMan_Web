@@ -1,0 +1,82 @@
+<!doctype html>
+
+<head>
+	<title>Monkey Man Productions</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	<link rel="icon" href="../Public/Imgs/MMicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<script src="../JS/function.js"></script>
+	<meta charset="utf-8">
+	<meta name="Monkey Man Productions">
+</head>
+
+<body>
+	<div class="socialNetworksFrame">
+		<span id="dimmer" onmouseover="dimmerOut(event)" onmouseout="dimmerIn(event)"></span>
+		<div class="socialIconFrame socialFB" onmouseover ="dimmerOut(event)"> <img src="../Public/Imgs/SSNN/FB.png" /> </div>
+		<div class="socialIconFrame socialTT" onmouseover ="dimmerOut(event)"> <img src="../Public/Imgs/SSNN/TT.png" /> </div>
+		<div class="socialIconFrame socialIG" onmouseover ="dimmerOut(event)"> <img src="../Public/Imgs/SSNN/IG.png" /> </div>
+		<div class="socialIconFrame socialYT" onmouseover ="dimmerOut(event)"> <img src="../Public/Imgs/SSNN/YT.png" /> </div>
+	</div>
+	<div id="mainFrame">
+		<header>
+			<div class="main-bar">
+				<!--<h1 class="headerBrand"> MONKEY<br>MAN </h1> -->
+				<img class="headerBrand" src="../Public/Imgs/MM_typo.png"/>
+				<nav class="wrapper">
+					<ul class="list">
+						<a href=""><li>Sobre Nosotros</li></a>
+						<a href="../URL/services.html"><li>Servicios</li></a>
+						<a href=""><li>Nuestros Productos</li></a>
+						<li class="selected">Contáctanos</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="intBody">
+			<div class="title">
+				<h3>¿Estás interesado en contactarnos?</h3>
+			</div>
+			<h4>
+				Nosotros estaremos encantados de poder atender a tus proyectos, puedes contactárnos a través de los siguientes medios
+			</h4>
+			<div class="contactBar">
+				<img class="contactIcon" src="../Public/Imgs/SSNN/P.png">
+				<h4 style="display: inline-block; vertical-align: text-bottom; margin-left: 10px">671986926</h4>
+				<img class="contactIcon" src="../Public/Imgs/SSNN/W.png">
+				<h4 style="display: inline-block; vertical-align: text-bottom; margin-left: 10px">671986926</h4>
+				<img class="contactIcon" src="../Public/Imgs/SSNN/M.png">
+				<h4 style="display: inline-block; vertical-align: text-bottom; margin-left: 10px; font-variant: normal">monkeymansound@gmail.com</h4>
+			</div>
+			<h4>
+				O puedes optar por no perder un segundo más y rellenar este sencillo formulario, nosotros nos pondremos en contacto lo antes posible
+			</h4>
+			<fieldset>
+				<legend>Información Personal</legend>
+				<form action="grats.html">
+					<p>Nombre</p>
+					<input type="text" name="nombre" placeholder="(Obligatorio)" required>
+					<p>Apellidos</p>
+					<input type="text" name="apellidos" placeholder="(Obligatorio)" required>
+					<p>Correo Electrónico</p>
+					<input type="text" name="email" placeholder="(Obligatorio)" required>
+					<p>Teléfono</p>
+					<input type="" name="phone" placeholder="(Opcional)" required="false">
+					<p>Estoy interesado en...</p>
+					<select required>
+						<option selected>Grabación</option>
+						<option>Edición</option>
+						<option>Mezcla</option>
+						<option>Producción</option>
+						<option>Directos</option>
+						<option>Eventos</option>
+						<option>Otros...</option>
+					</select>
+					<p>Comentarios Adicionales</p>
+					<textarea name="message" rows="10" cols="100" placeholder="(Opcional)"></textarea>
+					<input type="submit" name="submit" style="background-color: #4488a1; color: white; font-weight: bolder; letter-spacing: 3px; width: 100%;" value="Enviar Formulario">
+				</form>
+			</fieldset>
+		</div>
+	</div>
+</body>
